@@ -202,7 +202,7 @@ void etoiles() {
 			cout << "Entrez le nombre de lignes pour la pyramide (1-200) : " << endl << endl;
 			cin >> etoiles;
 
-			if (etoiles < 200) {
+			if (etoiles <= 200) {
 				// Boucle externe pour les lignes
 				for (int i = 1; i <= etoiles; i++) {
 					// Boucle interne pour afficher les étoiles sur chaque ligne
@@ -214,7 +214,7 @@ void etoiles() {
 				break; // Sort de la boucle 'while' et termine le programme après avoir dessiné
 			}
 			else {
-				cout << "ERREUR, Entrer un nombre entre 0 et 1999" << endl << endl << endl << endl;
+				cout << "ERREUR, Entrer un nombre entre 0 et 200" << endl << endl << endl << endl;
 			}
 		}
 		return;
